@@ -15,7 +15,8 @@ export default {
   data() {
     return {
       shows: [],
-      displayForm: false
+      displayForm: false,
+      API_URL: "https://livewyre-server.herokuapp.com/"
     };
   },
   components: {
@@ -29,6 +30,13 @@ export default {
     toggleForm() {
       this.displayForm = !this.displayForm;
     }
+  },
+  async mounted() {
+    fetch(this.API_URL)
+      .then(res => res.json())
+      .then(res => {
+        this.shows = res;
+      });
   }
 };
 </script>

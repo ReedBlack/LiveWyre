@@ -42,6 +42,7 @@ h2 {
   height: 1000px;
   width: 75vw;
   background-color: aquamarine;
+  overflow: scroll;
 }
 </style>
 

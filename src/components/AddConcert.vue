@@ -3,13 +3,13 @@
         <label for="artist">Artist</label>
         <input v-model="show.artist" type="text" name="artist">
         <label for="date">Date</label>
-        <input v-model="show.date" type="text" name="date">
+        <input v-model="show.concertDate" type="text" name="date">
         <label for="venue">Venue</label>
         <input v-model="show.venue" type="text" name="venue">
         <label for="poster">Poster URL</label>
-        <input v-model="show.poster" type="text" name="url">
-        <label for="description">Description</label>
-        <textarea v-model="show.description" name="description"></textarea>
+        <input v-model="show.concertPoster" type="text" name="url">
+        <label for="attendance">Attendance</label>
+        <textarea v-model="show.attendance" name="attendance"></textarea>
         <input type="submit" id="submitButton" name="submit" value="Submit" />
     </form>
 </template>
@@ -22,10 +22,10 @@ export default {
     return {
       show: {
         artist: "",
-        date: "",
+        concertDate: "",
         venue: "",
-        poster: "",
-        description: ""
+        concertPoster: "",
+        attendance: ""
       }
     };
   },
@@ -34,10 +34,10 @@ export default {
       this.addShow(this.show);
       this.show = {
         artist: "",
-        date: "",
+        concertDate: "",
         venue: "",
-        poster: "",
-        description: ""
+        concertoster: "",
+        attendance: ""
       };
     }
   }
