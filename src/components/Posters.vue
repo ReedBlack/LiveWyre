@@ -38,6 +38,7 @@ h2 {
 
 .poster-grid {
   display: flex;
+  /* flex-direction: row; */
   height: 1000px;
   width: 75vw;
   background-color: aquamarine;
