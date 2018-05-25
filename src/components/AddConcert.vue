@@ -1,5 +1,5 @@
 <template>
-    <form class="concert-form" :submitConcert="submitConcert" v-on:submit.prevent="submitConcert">
+    <form class="concert-form" :shows="shows" v-on:submit.prevent="submitConcert">
         <label for="artist">Artist</label>
         <input v-model="show.artist" type="text" name="artist">
         <label for="date">Date</label>
@@ -17,7 +17,7 @@
 <script>
 export default {
   name: "AddConcert",
-  props: ["addShow"],
+  props: ["addShow", "shows"],
   data() {
     return {
       show: {
@@ -45,4 +45,7 @@ export default {
 </script>
 
 <style scoped>
+form {
+  background-color: ;
+}
 </style>

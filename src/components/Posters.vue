@@ -12,6 +12,7 @@ import Poster from "@/components/Poster";
 
 export default {
   name: "Posters",
+  props: ["shows"],
   components: {
     Poster
   }
