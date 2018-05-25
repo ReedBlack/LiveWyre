@@ -13,7 +13,6 @@ export default {
 </script>
 
 <style scoped>
-
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
 
 header {
@@ -34,10 +33,9 @@ header {
   font-family: 'Permanent Marker', cursive;
   font-size: 20vh;
   font-weight: 200;
-  color: #BBB5BD;
+  color: #bbb5bd;
   padding-top: -5%;
   text-shadow: 2px 2px 2px white;
 
 }
-
 </style>
