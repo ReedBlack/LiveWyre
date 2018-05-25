@@ -1,6 +1,6 @@
 <template>
     <div>
-        <li :v-for="show in shows" :show="show" :key="show.artist">
+        <li v-for="show in shows" :show="show" :key="show.artist">
             <h2>{{show.artist}}</h2>
             <small>{{show.date}}</small>
             <h3>{{show.venue}}</h3>

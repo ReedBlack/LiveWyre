@@ -10,7 +10,7 @@
         <input v-model="show.poster" type="text" name="url">
         <label for="description">Description</label>
         <textarea v-model="show.description" name="description"></textarea>
-        <input type="submit" name="submit" value="Submit" />
+        <input type="submit" id="submitButton" name="submit" value="Submit" />
     </form>
 </template>
 

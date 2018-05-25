@@ -2,7 +2,7 @@
   <section class="homepage">
     <button type="button" @click.prevent="toggleForm">Add a show!</button>     
     <AddConcert :addShow="addShow" v-show="displayForm"/>
-     <Posters :shows="shows" />
+     <Posters :shows="shows" :show="show" />
   </section>
 </template>
 
