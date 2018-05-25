@@ -22,16 +22,27 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
 
-h2 {
-  color: #b760e6;
-  text-shadow: 1px 1px 1px white;
-  font-family: "Permanent Marker", cursive;
+section {
+  display: flex;
+  /* height: 1000px; */
+  flex-direction: column;
+  align-items: center;
 }
 
-.posters {
+h2 {
+  color: #b760e6;
+  text-shadow: 2px 2px 2px white;
+  font-family: "Permanent Marker", cursive;
+  font-size: 10vh;
+}
+
+.poster-grid {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 20% 20% 20% 20% 20%;
+  height: 1000px;
+  width: 75vw;
+  background-color: aquamarine;
 }
 </style>
 
