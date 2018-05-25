@@ -1,11 +1,11 @@
 <template>
     <div>
-        <li v-for="show in shows">
-            <h2>{{concert.artist}}</h2>
-            <small>{{concert.date}}</small>
-            <h3>{{concert.venue}}</h3>
-            <div>{{concert.poster}}</div>
-            <p>{{concert.description}}</p>
+        <li v-for="show in shows" :key="show.title">
+            <h2>{{show.artist}}</h2>
+            <small>{{show.date}}</small>
+            <h3>{{show.venue}}</h3>
+            <div>{{show.poster}}</div>
+            <p>{{show.description}}</p>
         </li>
     </div>
 </template>
