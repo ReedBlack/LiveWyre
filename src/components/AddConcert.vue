@@ -1,5 +1,5 @@
 <template>
-    <form class="concert-form" v-on:submit.prevent="submitConcert">
+    <form class="concert-form" :submitConcert="submitConcert" v-on:submit.prevent="submitConcert()">
         <label for="artist">Artist</label>
         <input v-model="concert.artist" type="text" name="artist">
         <label for="date">Date</label>
@@ -17,7 +17,6 @@
 <script>
 export default {
   name: "AddConcert",
-  props: ["sendConcert"],
   data() {
     return {
       concert: {
@@ -29,17 +28,17 @@ export default {
       }
     };
   }
-  // methods: {
+  //  methods: {
   //     submitConcert () {
-  //         this.sendConcert(this.concert);
+  //       this.sendConcert(this.concert);
   //         this.concert: {
-  //             artist: '',
-  //             date: '',
-  //             venue: '',
-  //             poster: '',
-  //             description: ''
-  //             }
+  //         artist: '',
+  //         date: '',
+  //         venue: '',
+  //         poster: '',
+  //         description: ''
   //         }
+  //        }
   //     }
 };
 </script>

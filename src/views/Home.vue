@@ -1,24 +1,19 @@
 <template>
   <section class="homepage">
      <AddConcert :addShow="addShow" />
-     <Poster :shows="shows" />
+     <Poster :concerts="concerts" />
   </section>
 </template>
 
 <script>
 import AddConcert from "@/components/AddConcert";
-import Poster from "@/components/Poster";
+import Posters from "@/components/Posters";
 
 export default {
   name: "Home",
   components: {
     AddConcert,
-    Poster
-  },
-  methods: {
-    addShow(show) {
-      this.shows.unshift(show);
-    }
+    Posters
   }
 };
 </script>

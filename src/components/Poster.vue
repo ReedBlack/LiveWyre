@@ -11,7 +11,10 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "poster",
+  props: ["submitConcert"]
+};
 </script>
 
 <style>
