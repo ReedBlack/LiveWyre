@@ -16,31 +16,31 @@
 
 <script>
 export default {
-name: "AddConcert",
-props: ['sendConcert'],
-data() {
-return {
-    concert: {
-        artist: '',
-        date: '',
-        venue: '',
-        poster: '',
-        description: ''
-        }
-    }
-},
-methods: {
-    submitConcert () {
-        this.sendConcert(this.concert);
-        this.concert: {
-            artist: '',
-            date: '',
-            venue: '',
-            poster: '',
-            description: ''
-            }
-        }
-    }
+  name: "AddConcert",
+  props: ["sendConcert"],
+  data() {
+    return {
+      concert: {
+        artist: "",
+        date: "",
+        venue: "",
+        poster: "",
+        description: ""
+      }
+    };
+  }
+  // methods: {
+  //     submitConcert () {
+  //         this.sendConcert(this.concert);
+  //         this.concert: {
+  //             artist: '',
+  //             date: '',
+  //             venue: '',
+  //             poster: '',
+  //             description: ''
+  //             }
+  //         }
+  //     }
 };
 </script>
 
