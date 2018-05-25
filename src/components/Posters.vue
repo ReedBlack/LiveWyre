@@ -23,8 +23,15 @@ export default {
 
 h2 {
   color: #b760e6;
-
+  text-shadow: 1px 1px 1px white;
   font-family: "Permanent Marker", cursive;
 }
+
+.posters {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
 </style>
 
