@@ -36,6 +36,5 @@ header {
   color: #bbb5bd;
   padding-top: -5%;
   text-shadow: 2px 2px 2px white;
-
 }
 </style>
