@@ -1,6 +1,7 @@
 <template>
   <section class="homepage">
-     <AddConcert :addShow="addShow" />
+    <button type="button" @click.prevent="toggleForm">Add a show!</button>     
+    <AddConcert :addShow="addShow" v-show="addShow"/>
      <Posters :shows="shows" />
   </section>
 </template>
@@ -13,17 +14,21 @@ export default {
   name: "Home",
   data() {
     return {
-      shows: []
+      shows: [],
+      addShow: false
     };
   },
   components: {
     AddConcert,
-    Posters
+    Posters,
   },
   methods: {
     addShow(show) {
       this.shows.unshift(show);
-    }
+    },
+    toggleForm() {
+      this.addShow = !this.addShow;
+    }    
   }
 };
 </script>
@@ -35,5 +40,17 @@ export default {
   background-repeat: no-repeat;
   height: 70rem;
   margin: 0px;
+}
+button {
+  background-color: #FDB951;
+  color: black;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Permanent Marker", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
 }
 </style>
