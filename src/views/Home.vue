@@ -1,7 +1,7 @@
 <template>
   <section class="homepage">
-     <AddConcert :addShow="addShow" />
-     <Poster :concerts="concerts" />
+     <AddConcert />
+     <Posters />
   </section>
 </template>
 
