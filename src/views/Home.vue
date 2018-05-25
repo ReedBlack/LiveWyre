@@ -1,7 +1,7 @@
 <template>
   <section class="homepage">
     <button type="button" @click.prevent="toggleForm">Add a show!</button>     
-    <AddConcert :addShow="addShow" v-show="addShow"/>
+    <AddConcert :addShow="addShow" v-show="displayShow"/>
      <Posters :shows="shows" />
   </section>
 </template>
@@ -15,20 +15,20 @@ export default {
   data() {
     return {
       shows: [],
-      addShow: false
+      displayShow: false
     };
   },
   components: {
     AddConcert,
-    Posters,
+    Posters
   },
   methods: {
     addShow(show) {
       this.shows.unshift(show);
     },
     toggleForm() {
-      this.addShow = !this.addShow;
-    }    
+      this.displayShow = !this.displayShow;
+    }
   }
 };
 </script>
@@ -37,12 +37,13 @@ export default {
 .homepage {
   background-image: url("https://thumbs.dreamstime.com/b/people-clapping-night-concert-partying-raising-hands-artist-stage-blurry-aerial-view-concert-crowd-happy-57884733.jpg");
   background-size: contain;
+  width: 100vw;
   background-repeat: no-repeat;
   height: 70rem;
   margin: 0px;
 }
 button {
-  background-color: #FDB951;
+  background-color: #fdb951;
   color: black;
   font-size: 30px;
   padding-top: 10px;

@@ -1,5 +1,5 @@
 <template>
-    <form class="concert-form" :shows="shows" v-on:submit.prevent="submitConcert">
+    <form class="concert-form" :submitConcert="submitConcert" :shows="shows" v-on:submit.prevent="submitConcert">
         <label for="artist">Artist</label>
         <input v-model="show.artist" type="text" name="artist">
         <label for="date">Date</label>
@@ -45,7 +45,6 @@ export default {
 </script>
 
 <style scoped>
-<style scoped>
 form {
   display: flex;
   flex-direction: column;
@@ -64,7 +63,7 @@ textarea {
   width: 100%;
 }
 #submitButton {
-  background-color: #FDB951;
+  background-color: #fdb951;
   color: black;
   font-size: 30px;
   padding-top: 10px;
