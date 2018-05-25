@@ -2,7 +2,7 @@
     <section>
         <h2>your shows</h2>
         <ul class="poster-grid">
-            <Poster class="poster" :shows="shows" />
+            <Poster :shows="shows" :show="show" />
         </ul>
     </section>
 </template>
@@ -12,7 +12,7 @@ import Poster from "@/components/Poster";
 
 export default {
   name: "Posters",
-  props: ["shows", "submitConcert"],
+  props: ["shows", "submitConcert", "show"],
   components: {
     Poster
   }
@@ -33,6 +33,5 @@ h2 {
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 20% 20% 20% 20% 20%;
 }
-
 </style>
 

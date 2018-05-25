@@ -1,7 +1,7 @@
 <template>
   <section class="homepage">
     <button type="button" @click.prevent="toggleForm">Add a show!</button>     
-    <AddConcert :addShow="addShow" v-show="displayShow"/>
+    <AddConcert :addShow="addShow" v-show="displayForm"/>
      <Posters :shows="shows" />
   </section>
 </template>
@@ -15,7 +15,7 @@ export default {
   data() {
     return {
       shows: [],
-      displayShow: false
+      displayForm: false
     };
   },
   components: {
@@ -27,12 +27,8 @@ export default {
       this.shows.unshift(show);
     },
     toggleForm() {
-      this.displayShow = !this.displayShow;
-<<<<<<< HEAD
+      this.displayForm = !this.displayForm;
     }
-=======
-    }    
->>>>>>> f5f90f5a1d97282cd9a1503b4fd0a30368fec85b
   }
 };
 </script>
