@@ -45,7 +45,34 @@ export default {
 </script>
 
 <style scoped>
+<style scoped>
 form {
-  background-color: ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  color: white;
+  font-size: 20px;
+  font-family: "Permanent Marker", cursive;
+  padding: 1%;
+}
+input {
+  width: 100%;
+}
+textarea {
+  width: 100%;
+}
+#submitButton {
+  background-color: #FDB951;
+  color: black;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Permanent Marker", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
 </style>
