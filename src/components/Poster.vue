@@ -1,10 +1,10 @@
 <template>
-    <div>
+    <div class="poster">
         <li v-for="show in shows" :show="show" :key="show.artist">
-            <h2>{{show.artist}}</h2>
+            <h3>{{show.artist}}</h3>
             <small>{{show.date}}</small>
-            <h3>{{show.venue}}</h3>
-            <div>{{show.poster}}</div>
+            <h4>{{show.venue}}</h4>
+            <img :src="show.poster">
             <p>{{show.description}}</p>
         </li>
     </div>
@@ -18,4 +18,9 @@ export default {
 </script>
 
 <style>
+img {
+  max-height: 300px;
+  max-width: 300px;
+  background-size: 12%;
+}
 </style>
