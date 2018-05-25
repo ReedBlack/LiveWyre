@@ -28,7 +28,11 @@ export default {
     },
     toggleForm() {
       this.displayShow = !this.displayShow;
+<<<<<<< HEAD
     }
+=======
+    }    
+>>>>>>> f5f90f5a1d97282cd9a1503b4fd0a30368fec85b
   }
 };
 </script>

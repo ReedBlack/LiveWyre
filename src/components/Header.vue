@@ -30,10 +30,12 @@ header {
 }
 
 .font {
-  font-family: "Permanent Marker", cursive;
-  font-size: 12em;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20vh;
   font-weight: 200;
   color: #bbb5bd;
   padding-top: -5%;
+  text-shadow: 2px 2px 2px white;
+
 }
 </style>
