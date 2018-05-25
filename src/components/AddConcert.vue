@@ -55,6 +55,7 @@ form {
   font-size: 20px;
   font-family: "Permanent Marker", cursive;
   padding: 1%;
+  height: 550px;
 }
 input {
   width: 100%;
