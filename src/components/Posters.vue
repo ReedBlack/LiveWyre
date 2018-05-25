@@ -24,7 +24,7 @@ export default {
 
 section {
   display: flex;
-  /* height: 1000px; */
+  height: 1000px;
   flex-direction: column;
   align-items: center;
 }
@@ -37,9 +37,8 @@ h2 {
 }
 
 .poster-grid {
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+  display: flex;
+  
   height: 1000px;
   width: 75vw;
   background-color: aquamarine;

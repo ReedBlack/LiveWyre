@@ -36,8 +36,8 @@ export default {
 <style>
 .homepage {
   background-image: url("https://thumbs.dreamstime.com/b/people-clapping-night-concert-partying-raising-hands-artist-stage-blurry-aerial-view-concert-crowd-happy-57884733.jpg");
-  background-size: contain;
-  width: 100vw;
+  background-size: cover;
+  width: 100%;
   background-repeat: no-repeat;
   height: 70rem;
   margin: 0px;
