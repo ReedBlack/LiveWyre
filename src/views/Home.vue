@@ -46,8 +46,9 @@ export default {
   background-image: url("https://thumbs.dreamstime.com/b/people-clapping-night-concert-partying-raising-hands-artist-stage-blurry-aerial-view-concert-crowd-happy-57884733.jpg");
   background-size: cover;
   width: 100%;
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  height: 70rem;
+  height: 170rem;
   margin: 0px;
 }
 button {

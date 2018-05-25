@@ -36,13 +36,5 @@ h2 {
   font-size: 10vh;
 }
 
-.poster-grid {
-  display: flex;
-  /* flex-direction: row; */
-  height: 1000px;
-  width: 75vw;
-  background-color: aquamarine;
-  overflow: scroll;
-}
 </style>
 
