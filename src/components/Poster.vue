@@ -1,6 +1,6 @@
 <template>
     <div>
-        <li :v-for="show in shows">
+        <li :v-for="show in shows" :key="show.artist">
             <h2>{{show.artist}}</h2>
             <small>{{show.date}}</small>
             <h3>{{show.venue}}</h3>
@@ -13,7 +13,7 @@
 <script>
 export default {
   name: "poster",
-  props: ["submitConcert", "shows"]
+  props: ["submitConcert", "shows", "show"]
 };
 </script>
 

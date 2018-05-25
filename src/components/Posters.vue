@@ -2,7 +2,7 @@
     <section>
         <h2>your shows</h2>
         <ul class="poster-grid">
-            <Poster class="poster" :posters="posters" />
+            <Poster class="poster" :shows="shows" />
         </ul>
     </section>
 </template>
@@ -12,7 +12,7 @@ import Poster from "@/components/Poster";
 
 export default {
   name: "Posters",
-  props: ["shows"],
+  props: ["shows", "submitConcert"],
   components: {
     Poster
   }

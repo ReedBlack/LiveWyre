@@ -20,7 +20,7 @@ export default {
   },
   components: {
     AddConcert,
-    Posters,
+    Posters
   },
   methods: {
     addShow(show) {
@@ -28,7 +28,11 @@ export default {
     },
     toggleForm() {
       this.displayShow = !this.displayShow;
+<<<<<<< HEAD
+    }
+=======
     }    
+>>>>>>> f5f90f5a1d97282cd9a1503b4fd0a30368fec85b
   }
 };
 </script>
@@ -37,12 +41,13 @@ export default {
 .homepage {
   background-image: url("https://thumbs.dreamstime.com/b/people-clapping-night-concert-partying-raising-hands-artist-stage-blurry-aerial-view-concert-crowd-happy-57884733.jpg");
   background-size: contain;
+  width: 100vw;
   background-repeat: no-repeat;
   height: 70rem;
   margin: 0px;
 }
 button {
-  background-color: #FDB951;
+  background-color: #fdb951;
   color: black;
   font-size: 30px;
   padding-top: 10px;
