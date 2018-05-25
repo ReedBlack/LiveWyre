@@ -26,12 +26,14 @@ export default {
         venue: "",
         concertPoster: "",
         attendance: ""
-      }
+      },
+      API_URL: "https://livewyre-server.herokuapp.com/"
     };
   },
   methods: {
     submitConcert() {
       this.addShow(this.show);
+      this.postConcert();
       this.show = {
         artist: "",
         concertDate: "",
@@ -39,6 +41,15 @@ export default {
         concertoster: "",
         attendance: ""
       };
+    },
+    postConcert() {
+      return fetch(this.API_URL, {
+        headers: {
+          "content-type": "application/json"
+        },
+        method: "POST",
+        body: JSON.stringify(this.show)
+      });
     }
   }
 };
