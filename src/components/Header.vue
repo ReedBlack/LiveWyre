@@ -1,6 +1,8 @@
 <template>
   <header>
-    <h1>LiveWyre</h1>
+    <br>&nbsp;</br>
+    <br>&nbsp;</br>
+    <h1 class="font">LiveWyre</h1>
   </header>
 </template>
 
@@ -15,10 +17,25 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
 
 header {
-  background-color: #b760e6;
-  padding: 1.2%;
-  padding-bottom: 3.9%;
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #9b52c2;
+  margin-top: 0%;
+  padding-top: 0%;
+  margin-bottom: 2%;
+  padding-bottom: 3%;
+  border-bottom: 6px outset rgb(143, 48, 48);
+}
+
+.font {
   font-family: 'Permanent Marker', cursive;
+  font-size: 12em;
+  font-weight: 200;
+  color: #BBB5BD;
+  padding-top: -5%;
 }
 
 </style>
